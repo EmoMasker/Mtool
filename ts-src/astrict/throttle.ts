@@ -7,8 +7,8 @@ export default function throttle(
   func: Function,
   wait: number = 1000
 ): Function {
-  let timeout: number = 0;
-  return function () {
+  let timeout: any = 0;
+  return function (this:any) {
     let that: any = this;
     let arges: any = arguments;
     if (!timeout) {

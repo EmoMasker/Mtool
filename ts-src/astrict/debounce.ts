@@ -9,8 +9,8 @@ export default function debounce(
   wait: number = 1000,
   immediate: boolean = true
 ): Function {
-  let timeout: number = 0;
-  return function () {
+  let timeout: any = 0;
+  return function (this:any) {
     let that: any = this;
     let arges: any = arguments;
     if (timeout) {

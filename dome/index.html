@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box_center {
+        width: 600px;
+        height: 600px;
+        border: 1px solid #eee;
+        line-height: 600px;
+        text-align: center;
+      }
+      .box_center span{
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 100px;
+        border-style: solid;
+        border-color: #0099CC transparent transparent transparent;
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_center">
+      <span></span>
+    </div>
+
+    <script src="./Mtool.js"></script>
+    <script>
+      console.log(Mtool)
+    </script>
+  </body>
+</html>
